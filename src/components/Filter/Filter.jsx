@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { setFilter } from 'redux/filter-slice';
+import { setFilter } from 'redux/contacts/filter-slice';
+import css from '../Filter/Filter.module.css';
 
 export default function Filter() {
 
@@ -13,6 +14,6 @@ export default function Filter() {
     }
 
     return (
-        <input type="text" name="filter" value={filterValue} onChange={handleChange}></input>
+        <input className={css.filterInput} type="text" name="filter" value={filterValue} onChange={handleChange}></input>
     )
 }

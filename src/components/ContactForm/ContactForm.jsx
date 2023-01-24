@@ -2,7 +2,7 @@ import { useState } from 'react';
 import css from '../ContactForm/ContactForm.module.css';
 import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/operations';
+import { addContact } from 'redux/contacts/contacts-operations';
 
 export default function ContactForm() {
 
@@ -33,6 +33,7 @@ export default function ContactForm() {
     }
 
     const isDublicate = (name) => {
+        console.log(name)
         const resault = contacts.find(item => item.name.toLocaleLowerCase() === name.toLocaleLowerCase());
         return resault;
     }
@@ -51,10 +52,10 @@ export default function ContactForm() {
         <div className={css.contactForm}>
             <form onSubmit={handleContact}>
                 <div className={css.contactFormBlock}>
-                    <label className={css.contactFormInput} htmlFor={nameId}>
+                    <label className={css.contactFormItem} htmlFor={nameId}>
                         Name
                     </label>
-                    <input
+                    <input className={css.contactFormInput}
                         id={nameId}
                         type="text"
                         name="name"
@@ -66,10 +67,10 @@ export default function ContactForm() {
                     />
                 </div>
                 <div className={css.contactFormBlock}>
-                    <label className={css.contactFormInput} htmlFor={numberId}>
+                    <label className={css.contactFormItem} htmlFor={numberId}>
                         Number
                     </label>
-                    <input
+                    <input className={css.contactFormInput}
                         id={numberId}
                         type="tel"
                         name="number"
@@ -80,7 +81,7 @@ export default function ContactForm() {
                         onChange={handleChange}
                     />
                 </div>
-                <button className={css.btnContactForm}>Add contact</button>
+                <button className={css.btnContactForm}>Add contact </button>
             </form>
         </div>
     );

@@ -1,5 +1,16 @@
-.filterInput {
-    margin-bottom: 15px;
+.textFieldFormBlock {
+    margin-bottom: 10px;    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.textFieldItem {
+            width: 100%;
+            margin-bottom: 5px;
+}
+
+.textFieldInput {
+    width: 100%;
     height: 20px;
     border: 2px solid;
     padding: 2px;
@@ -9,7 +20,8 @@
 }
 
 
-.filterInput:focus {
+.textFieldInput:focus {
     outline: none;
     border-color: var(--secondary-text-color);
 }
+

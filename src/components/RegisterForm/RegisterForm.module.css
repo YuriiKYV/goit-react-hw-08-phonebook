@@ -1,4 +1,7 @@
-.contactForm {
+.registerForm {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
     color: var(--secondary-text-color);
     padding: 10px;
     border: 3px solid;
@@ -7,37 +10,12 @@
     border-color: var(--secondary-text-color);
 }
 
-.contactFormBlock {
-    margin-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.contactFormItem {
-    width: 100%;
-    margin-bottom: 5px;
-
-}
-
-.contactFormInput {
-    height: 20px;
-    border: 2px solid;
-    padding: 2px;
-    border-radius: 8px;
-    border-color: var(--primary-accent-color);
-    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-}
-
-.contactFormInput:focus {
-    outline: none;
-    border-color: var(--secondary-text-color);
-}
-
-.btnContactForm {
+.btnRegisterForm {
     cursor: pointer;
     padding: 5px 10px;
     border: 2px solid;
     color: var(--secondary-text-color);
+    margin-left: auto;
 
     height: 35px;
     font-size: 14px;
@@ -45,14 +23,14 @@
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btnContactForm:hover,
-.btnContactForm:focus {
+.btnRegisterForm:hover,
+.btnRegisterForm:focus {
     background: rgb(139, 120, 0);
     color: var(--primary-accent-color);
     border-color: var(--primary-accent-color);
 }
 
-.btnContactForm:active {
+.btnRegisterForm:active {
     background-color: #ffffff;
     transform: translateY(4px);
 }

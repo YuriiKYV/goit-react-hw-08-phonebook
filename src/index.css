@@ -7,6 +7,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+      background-color: cornsilk;
+}
+
+:root {
+
+  --primary-accent-color: #ffffff;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+  --secondary-accent-color: #ffffff;
+  --primery-icon-coplor: #afb1b8;
 }
 
 code {
@@ -15,5 +27,54 @@ code {
 }
 
 .App {
-  padding-left: 20px;
+
+  
+}
+
+.header {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }

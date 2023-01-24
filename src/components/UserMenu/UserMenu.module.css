@@ -1,0 +1,44 @@
+.userMenu {
+    display: flex;
+    align-items: center;
+}
+
+
+.userMenuBtn {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 2px solid;
+    color: var(--secondary-text-color);
+
+    height: 35px;
+    font-size: 14px;
+    border-radius: 15px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.userMenuBtn:hover,
+.userMenuBtn:focus {
+    background: rgb(139, 120, 0);
+    color: var(--primary-accent-color);
+    border-color: var(--primary-accent-color);
+}
+
+.userMenuBtn:active {
+    background-color: #ffffff;
+    transform: translateY(4px);
+}
+
+.userMenuEmail {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-accent-color);
+}
