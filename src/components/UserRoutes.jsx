@@ -1,6 +1,5 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Navigation from './Navigation/Navigation';
 
 import PublicRoute from './PublicRoute/PublicRoute';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
@@ -29,12 +28,3 @@ export default function App() {
     </ Suspense>
   );
 };
-
-// <div className="App">
-//   <h1>Phonebook</h1>
-//   <ContactForm></ContactForm>
-
-//   <h2>Contacts</h2>
-//   <Filter />
-//   <ContactList />
-// </div>

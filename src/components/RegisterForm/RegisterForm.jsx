@@ -12,7 +12,6 @@ import fields from "./fields";
 
 const RegisterForm = ({ onSubmit }) => {
     const { state, handleChange, handleSubmit } = useForm({ initialState, onSubmit });
-    console.log(initialState)
 
     const nameId = useMemo(() => nanoid(), []);
     const emailId = useMemo(() => nanoid(), []);

@@ -33,7 +33,6 @@ export default function ContactForm() {
     }
 
     const isDublicate = (name) => {
-        console.log(name)
         const resault = contacts.find(item => item.name.toLocaleLowerCase() === name.toLocaleLowerCase());
         return resault;
     }

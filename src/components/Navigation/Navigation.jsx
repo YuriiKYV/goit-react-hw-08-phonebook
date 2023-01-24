@@ -7,13 +7,6 @@ import UserMenu from '../UserMenu/UserMenu';
 import useAuth from 'shared/hooks/useAuth';
 import css from '../Navigation/Navigation.module.css';
 
-
-// const getClassName = ({ isActive }) => {
-//     return isActive ? `${css.navigationContactsLink} ${css.navigationContactsLinkActive}` : css.navigationContactsLink;
-// }
-
-// import styles from "./navbar.module.scss";
-
 const Navigation = () => {
     const isLogin = useAuth();
 

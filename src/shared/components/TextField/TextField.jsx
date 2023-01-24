@@ -3,7 +3,7 @@ import css from '../TextField/TextField.module.css'
 
 
 const TextField = ({ id, label, value, name, handleChange, type, checked, className, placeholder, required, pattern }) => {
-    // const fullClassName = className ? `${styles.field} ${className}` : styles.field;
+
 
     return (
         <div className={css.textFieldFormBlock}>

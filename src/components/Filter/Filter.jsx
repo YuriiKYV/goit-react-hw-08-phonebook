@@ -10,7 +10,6 @@ export default function Filter() {
     const handleChange = e => {
         const { value } = e.target;
         dispatch(setFilter(value))
-        console.log()
     }
 
     return (
