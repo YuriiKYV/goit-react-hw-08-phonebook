@@ -55,6 +55,9 @@ export const current = createAsyncThunk(
     async (_, { rejectWithValue, getState }) => {
         try {
             const { auth } = getState();
+            if (!auth.token) {
+                return rejectWithValue()
+            }
             const result = await api.getCurrentUser(auth.token);
             return result;
         } catch ({ response }) {
